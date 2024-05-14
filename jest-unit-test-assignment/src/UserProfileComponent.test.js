@@ -16,7 +16,7 @@ describe('The User Profile Component', () => {
         expect(errorMessage).toBeInTheDocument();
     });
 
-    //TODO: create test to check for last name blank
+ 
     test('displays an error message if last name is blank', () => {
         render(<UserProfileComponent />);
 
@@ -41,7 +41,7 @@ describe('The User Profile Component', () => {
         const errorMessage = screen.getByText(/Last Name cannot be blank/i);
         expect(errorMessage).toBeInTheDocument();
     });
-    //TODO: create test to check for email blank
+
     test('displays an error message if email is blank', () => {
         render(<UserProfileComponent />);
 
@@ -66,7 +66,7 @@ describe('The User Profile Component', () => {
         const errorMessage = screen.getByText(/Email cannot be blank/i);
         expect(errorMessage).toBeInTheDocument();
     });
-    //TODO: create test to check for email invalid
+
     test('displays an error message if email is invalid', () => {
         render(<UserProfileComponent />);
 
@@ -91,7 +91,7 @@ describe('The User Profile Component', () => {
         const errorMessage = screen.getByText(/Email is invalid/i);
         expect(errorMessage).toBeInTheDocument();
     });
-    //TODO: create test to check for password blank
+
     test('displays an error message if password is blank', () => {
         render(<UserProfileComponent />);
 
@@ -116,7 +116,7 @@ describe('The User Profile Component', () => {
         const errorMessage = screen.getByText(/Password cannot be blank/i);
         expect(errorMessage).toBeInTheDocument();
     });
-    //TODO: create test to check for password confirm blank
+  
     test('displays an error message if password is confirmed blank', () => {
         render(<UserProfileComponent />);
 
@@ -141,7 +141,7 @@ describe('The User Profile Component', () => {
         const errorMessage = screen.getByText(/Password Confirm cannot be blank/i);
         expect(errorMessage).toBeInTheDocument();
     });
-    //TODO: create test to check for password and password confirm not matching
+
     test('displays an error message if password and password confirm is not matching', () => {
         render(<UserProfileComponent />);
 
@@ -166,7 +166,7 @@ describe('The User Profile Component', () => {
         const errorMessage = screen.getByText(/Passwords do not match/i);
         expect(errorMessage).toBeInTheDocument();
     });
-    //TODO: create test to check for successful submission (check for Thank you message)
+ 
     test('displays a thank you message on successful submission', () => {
         render(<UserProfileComponent />);
 
